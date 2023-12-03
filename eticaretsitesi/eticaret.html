@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yazılım Mektebi | Kitap Mağazası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+        <h2 class="title">Bookshop</h2>
+        <ul class="menu">
+            <li class="active">Books</li>
+            <li>AUDIOBOOKS</li>
+            <li>GIFTS</li>
+            <li>ABOUT</li>
+        </ul>
+        <ul class="menu_icons">
+            <li><i class="bi bi-person"></i></li>
+            <li><i class="bi bi-search"></i></li>
+            <li class="basket_icon">
+                <i class="bi bi-bag"></i>
+                <span class="basket_count">2</span>
+            </li>
+        </ul>
+    </nav>
+    <section class="slider">
+      <div class="carousel slide carousel-fade" data-ride="carousel" id="slider">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1" ></li>
+            <li data-target="#slider" data-slide-to="2" ></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="1000">
+                <img class="d-block w-100" src="img/slide-1.jpg" alt="Online School">
+            </div>
+            <div class="carousel-item " data-interval="1500">
+                <img class="d-block w-100" src="img/slide-2.jpg" alt="Dünya Çoçuk Kitap Günü">
+            </div>
+            <div class="carousel-item " data-interval="2000">
+                <img class="d-block w-100" src="img/slide-3.jpg" alt="Sevgililer Günü">
+            </div>
+        </div>
+        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    </section>
+    <section class="store my-5"> <!--mt-5 yandan boşluk my-5 aşağıdan boşluk -->
+        <div class="filter_background">
+        </div>
+        <ul class="filter">
+            <li class="active">Tümü</li>
+            <li>ROMAN</li>
+            <li>Kişisel Gelişim</li>
+            <li>Fantastik</li>
+        </ul>
+        <div class="row">
+            <div class="col-5 offset-2 my-5">
+                <div class="row book_card">
+                    <div class="col-6">
+                        <img class="img-fluid shadow" src="img/nutuk.jpg" alt="Nutuk - Mustafa Kemal Atatürk" width="250" height="400">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-between">
+                        <div class="book_detail">
+                            <span class="fos gray fs-5">Mustafa Kemal Atatürk</span><br>
+                            <span class="fs-4 fw-bold">Nutuk</span><br>
+                            <span class="book_star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="gray">250 reviews</span>
+                        </div>
+                        <p class="book_description fos gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum asperiores tenetur reprehenderit labore rem facere obcaecati sint delectus natus assumenda tempora amet ipsum repellendus repellat, omnis similique quasi? Unde corporis nihil eos fugit nam doloribus illum aliquid totam exercitationem aperiam? Iusto laboriosam sed, tenetur ab a impedit voluptas architecto.</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-4">45₺</span>
+                            <span class="fs-4 fw-bold old_price">65₺</span>
+                        </div>             
+                        <button class="btn_purple">ADD BASKET</button>      
+                    </div>
+                </div>
+            </div><!--Soldan iki boşluk offset-2-->
+            <div class="col-5 my-5">
+                <div class="row book_card">
+                    <div class="col-6">
+                        <img class="img-fluid shadow" src="img/nutuk.jpg" alt="Nutuk - Mustafa Kemal Atatürk" width="250" height="400">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-between">
+                        <div class="book_detail">
+                            <span class="fos gray fs-5">Mustafa Kemal Atatürk</span><br>
+                            <span class="fs-4 fw-bold">Nutuk</span><br>
+                            <span class="book_star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="gray">250 reviews</span>
+                        </div>
+                        <p class="book_description fos gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum asperiores tenetur reprehenderit labore rem facere obcaecati sint delectus natus assumenda tempora amet ipsum repellendus repellat, omnis similique quasi? Unde corporis nihil eos fugit nam doloribus illum aliquid totam exercitationem aperiam? Iusto laboriosam sed, tenetur ab a impedit voluptas architecto.</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-4">45₺</span>
+                            <span class="fs-4 fw-bold old_price">65₺</span>
+                        </div>             
+                        <button class="btn_purple">ADD BASKET</button>      
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 offset-2 my-5">
+                <div class="row book_card">
+                    <div class="col-6">
+                        <img class="img-fluid shadow" src="img/nutuk.jpg" alt="Nutuk - Mustafa Kemal Atatürk" width="250" height="400">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-between">
+                        <div class="book_detail">
+                            <span class="fos gray fs-5">Mustafa Kemal Atatürk</span><br>
+                            <span class="fs-4 fw-bold">Nutuk</span><br>
+                            <span class="book_star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="gray">250 reviews</span>
+                        </div>
+                        <p class="book_description fos gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum asperiores tenetur reprehenderit labore rem facere obcaecati sint delectus natus assumenda tempora amet ipsum repellendus repellat, omnis similique quasi? Unde corporis nihil eos fugit nam doloribus illum aliquid totam exercitationem aperiam? Iusto laboriosam sed, tenetur ab a impedit voluptas architecto.</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-4">45₺</span>
+                            <span class="fs-4 fw-bold old_price">65₺</span>
+                        </div>             
+                        <button class="btn_purple">ADD BASKET</button>      
+                    </div>
+                </div>
+            </div><!--Soldan iki boşluk offset-2-->
+            <div class="col-5 my-5">
+                <div class="row book_card">
+                    <div class="col-6">
+                        <img class="img-fluid shadow" src="img/nutuk.jpg" alt="Nutuk - Mustafa Kemal Atatürk" width="250" height="400">
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-between">
+                        <div class="book_detail">
+                            <span class="fos gray fs-5">Mustafa Kemal Atatürk</span><br>
+                            <span class="fs-4 fw-bold">Nutuk</span><br>
+                            <span class="book_star-rate">
+                                <i class="bi bi-star-fill active"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="gray">250 reviews</span>
+                        </div>
+                        <p class="book_description fos gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum asperiores tenetur reprehenderit labore rem facere obcaecati sint delectus natus assumenda tempora amet ipsum repellendus repellat, omnis similique quasi? Unde corporis nihil eos fugit nam doloribus illum aliquid totam exercitationem aperiam? Iusto laboriosam sed, tenetur ab a impedit voluptas architecto.</p>
+                        <div>
+                            <span class="black fw-bold fs-4 me-4">45₺</span>
+                            <span class="fs-4 fw-bold old_price">65₺</span>
+                        </div>             
+                        <button class="btn_purple">ADD BASKET</button>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="basket_modal">
+        <div class="basket_items">
+            <i class="bi bi-x"></i>
+            <h2 class="basket_title">Your Items</h2>
+            <ul class="basket_list">
+                <li class="basket_item">
+                    <img src="img/nutuk.jpg" width="100px" height="100px">
+                    <div class="basket_item-info">
+                        <h3 class="book_name">Nutuk</h3>
+                        <span class="book_price">45₺</span><br>
+                        <span class="book_remove">remove</span>
+                    </div>
+                    <div class="book_count">
+                        <span class="decrease">-</span>
+                        <span class="my-5">2</span>
+                        <span class="increase">+</span>
+                    </div>
+                </li>
+                <li class="basket_item">
+                    <img src="img/nutuk.jpg" width="100px" height="100px">
+                    <div class="basket_item-info">
+                        <h3 class="book_name">Nutuk</h3>
+                        <span class="book_price">45₺</span><br>
+                        <span class="book_remove">remove</span>
+                    </div>
+                    <div class="book_count">
+                        <span class="decrease">-</span>
+                        <span class="my-5">2</span>
+                        <span class="increase">+</span>
+                    </div>
+                </li>
+                <li class="basket_item">
+                    <img src="img/nutuk.jpg" width="100px" height="100px">
+                    <div class="basket_item-info">
+                        <h3 class="book_name">Nutuk</h3>
+                        <span class="book_price">45₺</span><br>
+                        <span class="book_remove">remove</span>
+                    </div>
+                    <div class="book_count">
+                        <span class="decrease">-</span>
+                        <span class="my-5">2</span>
+                        <span class="increase">+</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="basket_total">
+                <span class="basket_price">Total: 145₺</span>
+                <button class="btn_purple">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
+
